@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">AND_KM 6_Yunian Edwi Risnawaputra_Challenge</string>
+    <string name="app_name">Food App</string>
+    <string name="list_menu">List Menu Makanan</string>
+    <string name="name_user">Halo, Yun!</string>
+    <string name="greetings">Mau makan apa hari ini?</string>
+    <string name="discount">Diskon 100%!</string>
+    <string name="desc_banner">Dapatkan diskonmu disini!</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="currency">Rp.</string>
+    <string name="price">80000</string>
+    <string name="category">Nasi</string>
+    <string name="search_menu">Cari apa?</string>
 </resources>
