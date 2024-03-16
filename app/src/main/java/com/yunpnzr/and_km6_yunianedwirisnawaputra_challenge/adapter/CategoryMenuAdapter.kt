@@ -3,8 +3,8 @@ package com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.data.model.Category
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.databinding.ItemCategoryMenuBinding
-import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.model.Category
 
 class CategoryMenuAdapter:
     RecyclerView.Adapter<CategoryMenuAdapter.CategoryViewHolder>() {
