@@ -10,6 +10,8 @@ interface AppDataSource{
 }
 
 class AppDataSourceImpl: AppDataSource{
+
+    //data category menu
     override fun getCategoryDataSource(): List<Category> {
         return mutableListOf(
             Category(image = R.drawable.img_rice, name = "Nasi"),
@@ -19,6 +21,7 @@ class AppDataSourceImpl: AppDataSource{
         )
     }
 
+    //data catalog
     override fun getCatalogDataSource(): List<Catalog> {
         return mutableListOf(
             Catalog(
