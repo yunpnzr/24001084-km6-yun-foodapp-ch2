@@ -28,7 +28,7 @@
             android:id="@+id/tv_catalog_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/lorem_ipsum"
+            android:text="@string/loading_name_menu"
             tools:text = "Lorem Ipsum"
             android:ellipsize="end"
             android:maxLines="1"

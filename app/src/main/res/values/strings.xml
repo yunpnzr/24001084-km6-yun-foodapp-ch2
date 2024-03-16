@@ -7,7 +7,8 @@
     <string name="desc_banner">Dapatkan diskonmu disini!</string>
     <string name="lorem_ipsum">Lorem Ipsum</string>
     <string name="currency">Rp.</string>
-    <string name="price">80000</string>
-    <string name="category">Nasi</string>
+    <string name="price">0</string>
     <string name="search_menu">Cari apa?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="loading_name_menu">Memuat data...</string>
 </resources>

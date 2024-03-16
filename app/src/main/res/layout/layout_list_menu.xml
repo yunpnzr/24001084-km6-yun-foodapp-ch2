@@ -26,13 +26,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/tv_list_menu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_list_menu"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/ic_list_black" />
+            app:srcCompat="@drawable/ic_grid_black"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <!--I create staggered layout-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_catalog"
             android:layout_width="match_parent"
