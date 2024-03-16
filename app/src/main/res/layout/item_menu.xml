@@ -39,12 +39,11 @@
             android:id="@+id/tv_catalog_currency"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
             android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp"
-            app:layout_constraintStart_toEndOf="@+id/iv_catalog"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_catalog_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_catalog_name"
-            tools:text="Rp." />
+            android:text="@string/currency" />
 
         <TextView
             android:id="@+id/tv_catalog_price"

@@ -76,7 +76,6 @@ class HomeFragment : Fragment() {
         )
         binding.layoutListMenu.rvCatalog.apply {
             adapter = this@HomeFragment.catalogAdapter
-            //layoutManager = StaggeredGridLayoutManager(if (usingListMode) 1 else 2, StaggeredGridLayoutManager.VERTICAL)
             if (usingListMode){
                 layoutManager = LinearLayoutManager(requireContext())
             } else {

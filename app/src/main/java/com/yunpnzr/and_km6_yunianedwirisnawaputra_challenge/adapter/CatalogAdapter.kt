@@ -16,8 +16,8 @@ class CatalogAdapter(
 ): RecyclerView.Adapter<ViewHolder>() {
 
     companion object{
-        const val GRID_MODE = 1
-        const val LIST_MODE = 2
+        const val GRID_MODE = 0
+        const val LIST_MODE = 1
     }
 
     private var asyncDiffer = AsyncListDiffer(
@@ -65,41 +65,3 @@ class CatalogAdapter(
     }
 
 }
-
-/*
-class CatalogAdapter:
-    RecyclerView.Adapter<CatalogAdapter.CatalogViewHolder>(){
-
-    private val data = mutableListOf<Catalog>()
-
-    fun submitDataCatalog(items: List<Catalog>){
-        data.addAll(items)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatalogViewHolder {
-        return CatalogViewHolder(
-            ItemGridMenuBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent,
-                false
-            )
-        )
-    }
-
-    override fun getItemCount(): Int = data.size
-
-    override fun onBindViewHolder(holder: CatalogViewHolder, position: Int) {
-        holder.bind(data[position])
-    }
-
-    inner class CatalogViewHolder(
-        private val binding: ItemGridMenuBinding
-    ): RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: Catalog) {
-            binding.ivCatalog.setImageResource(item.imageUrl)
-            binding.tvCatalogName.text = item.name
-            binding.tvCatalogPrice.text = item.price.toIndonesianFormat()
-        }
-    }
-
-}*/

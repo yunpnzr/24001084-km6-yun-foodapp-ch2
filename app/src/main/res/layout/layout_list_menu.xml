@@ -33,7 +33,6 @@
             app:srcCompat="@drawable/ic_grid_black"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <!--change to fragment ( aaaaaaaa :" )-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_catalog"
             android:layout_width="match_parent"
