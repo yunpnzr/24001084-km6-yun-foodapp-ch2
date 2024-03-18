@@ -4,14 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.R
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.adapter.CatalogAdapter
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.adapter.CategoryMenuAdapter
+import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.base.OnItemClickedListener
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.data.datasource.AppDataSourceImpl
+import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.data.model.Catalog
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.databinding.FragmentHomeBinding
+import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.feature.detail.DetailActivity
+import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.feature.detail.DetailFragment
 
 class HomeFragment : Fragment() {
 
@@ -71,9 +77,16 @@ class HomeFragment : Fragment() {
         } else {
             CatalogAdapter.GRID_MODE
         }
+
         catalogAdapter = CatalogAdapter(
-            listMode = listMode
+            listMode = listMode,
+            listener = object: OnItemClickedListener<Catalog>{
+                override fun onItemClicked(item: Catalog) {
+                    navigateToDetail(item)
+                }
+            }
         )
+
         binding.layoutListMenu.rvCatalog.apply {
             adapter = this@HomeFragment.catalogAdapter
             if (usingListMode){
@@ -83,6 +96,17 @@ class HomeFragment : Fragment() {
             }
         }
         catalogAdapter?.submitData(dataCatalog)
+
+    }
+
+    private fun navigateToDetail(item: Catalog) {
+        val navController = findNavController()
+        val bundle = bundleOf(Pair(DetailFragment.EXTRAS_ITEM, item))
+        //val bundleActivityDetail = bundleOf(Pair(DetailActivity.EXTRAS_ITEM,item))
+
+        navController.navigate(R.id.action_navigation_home_to_detailFragment, bundle)
+        //navController.navigate(R.id.action_navigation_home_to_detailActivity, bundleActivityDetail)
+        //navController.navigate(R.id.action_navigation_home_to_detailActivity, bundle)
     }
 
     private fun setListCategory() {

@@ -11,4 +11,6 @@
     <string name="search_menu">Cari apa?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="loading_name_menu">Memuat data...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
