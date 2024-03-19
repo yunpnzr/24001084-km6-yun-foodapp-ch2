@@ -6,12 +6,14 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.base.OnItemClickedListener
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.base.ViewHolderBinder
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.data.model.Catalog
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.databinding.ItemGridMenuBinding
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.databinding.ItemMenuBinding
 
 class CatalogAdapter(
+    private val listener: OnItemClickedListener<Catalog>,
     private val listMode: Int = LIST_MODE
 ): RecyclerView.Adapter<ViewHolder>() {
 
@@ -44,7 +46,7 @@ class CatalogAdapter(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
-                )
+                ),listener
             )
         } else {
             CatalogListViewHolder(
@@ -52,7 +54,7 @@ class CatalogAdapter(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
-                )
+                ),listener
             )
         }
     }

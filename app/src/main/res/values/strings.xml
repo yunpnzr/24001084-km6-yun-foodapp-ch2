@@ -8,7 +8,15 @@
     <string name="lorem_ipsum">Lorem Ipsum</string>
     <string name="currency">Rp.</string>
     <string name="price">0</string>
+    <string name="error_data">Data error, tidak ditemukan</string>
     <string name="search_menu">Cari apa?</string>
+    <string name="show_price_add_cart_button">Tambah ke keranjang - Rp.</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="loading_name_menu">Memuat data...</string>
+    <string name="loading_text">Memuat data...</string>
+    <string name="qyt_counter">1</string>
+    <string name="add_cart_plus">+</string>
+    <string name="add_cart_minus">-</string>
+    <string name="add_cart">Tambah ke keranjang - Rp.0</string>
+    <string name="title_location">Lokasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:cardElevation="16dp"
     app:cardCornerRadius="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,8 +12,6 @@
         android:layout_height="wrap_content"
         android:paddingVertical="16dp"
         android:background="?attr/colorSurfaceVariant">
-
-        <!--this just a mock up, will be replaced with recycleview ^^/-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_category"
