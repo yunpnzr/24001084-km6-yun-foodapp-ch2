@@ -17,7 +17,6 @@ import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.data.datasource.AppD
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.data.model.Catalog
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.databinding.FragmentHomeBinding
 import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.feature.detail.DetailActivity
-import com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.feature.detail.DetailFragment
 
 class HomeFragment : Fragment() {
 
@@ -101,12 +100,8 @@ class HomeFragment : Fragment() {
 
     private fun navigateToDetail(item: Catalog) {
         val navController = findNavController()
-        val bundle = bundleOf(Pair(DetailFragment.EXTRAS_ITEM, item))
-        //val bundleActivityDetail = bundleOf(Pair(DetailActivity.EXTRAS_ITEM,item))
-
-        navController.navigate(R.id.action_navigation_home_to_detailFragment, bundle)
-        //navController.navigate(R.id.action_navigation_home_to_detailActivity, bundleActivityDetail)
-        //navController.navigate(R.id.action_navigation_home_to_detailActivity, bundle)
+        val bundleActivityDetail = bundleOf(Pair(DetailActivity.EXTRAS_ITEM,item))
+        navController.navigate(R.id.action_navigation_home_to_detailActivity, bundleActivityDetail)
     }
 
     private fun setListCategory() {

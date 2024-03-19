@@ -13,8 +13,6 @@
         android:paddingVertical="16dp"
         android:background="?attr/colorSurfaceVariant">
 
-        <!--this just a mock up, will be replaced with recycleview ^^/-->
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_category"
             android:layout_width="match_parent"

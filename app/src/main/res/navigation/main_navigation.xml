@@ -13,18 +13,10 @@
         <action
             android:id="@+id/action_navigation_home_to_detailActivity"
             app:destination="@id/detailActivity" />
-        <!--<action
-            android:id="@+id/action_navigation_home_to_detailFragment"
-            app:destination="@id/detailFragment" />-->
     </fragment>
     <activity
         android:id="@+id/detailActivity"
         android:name="com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.feature.detail.DetailActivity"
         android:label="activity_detail"
         tools:layout="@layout/activity_detail" />
-    <!--<fragment
-        android:id="@+id/detailFragment"
-        android:name="com.yunpnzr.and_km6_yunianedwirisnawaputra_challenge.feature.detail.DetailFragment"
-        android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />-->
 </navigation>

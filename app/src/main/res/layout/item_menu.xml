@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="8dp">
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
         <ImageView
             android:id="@+id/iv_catalog"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:layout_marginVertical="8dp"
             android:layout_marginStart="8dp"
             android:scaleType="centerCrop"
@@ -27,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             tools:text="Lorem Ipsum"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="8dp"
             android:layout_marginHorizontal="8dp"
